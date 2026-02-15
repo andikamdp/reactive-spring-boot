@@ -12,8 +12,8 @@ import org.springframework.data.domain.Persistable;
 import org.springframework.data.relational.core.mapping.Table;
 
 import java.math.BigInteger;
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
-import java.util.Date;
 import java.util.UUID;
 
 @Data
@@ -28,7 +28,7 @@ public class UserEntity implements Persistable<UUID> {
     private String username;
     private String password;
     private BigInteger departmentId;
-    private Date birthdate;
+    private LocalDate birthdate;
     private ZonedDateTime lastLoginDate;
     private Boolean status;
 

@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigInteger;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 @Builder
@@ -16,6 +16,6 @@ public class UserRequest {
     private String username;
     private String password;
     private BigInteger departmentId;
-    private Date birthdate;
+    private LocalDate birthdate;
     private Boolean status;
 }

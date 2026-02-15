@@ -17,7 +17,7 @@ import java.time.ZonedDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table( name = "tbl_departments_tm")
+@Table(schema = "reactive_db", name = "tbl_departments_tm")
 public class DepartmentEntity {
 
     @Id

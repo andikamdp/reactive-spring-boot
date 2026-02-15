@@ -18,27 +18,27 @@ public class DepartmentOrchestrationService {
 
     public Mono<DepartmentEntity> createDepartment(DepartmentEntity department) {
         // Add business logic here if needed before saving
-        return departmentApplicationService.createDepartment(department);
+        return this.departmentApplicationService.createDepartment(department);
     }
 
     public Mono<DepartmentEntity> getDepartmentById(BigInteger id) {
-        return departmentApplicationService.getDepartmentById(id);
+        return this.departmentApplicationService.getDepartmentById(id);
     }
 
     public Flux<DepartmentEntity> getAllDepartments() {
-        return departmentApplicationService.getAllDepartments();
+        return this.departmentApplicationService.getAllDepartments();
     }
 
     public Flux<DepartmentEntity> getAllDepartments(Pageable pageable) {
-        return departmentApplicationService.getAllDepartments(pageable);
+        return this.departmentApplicationService.getAllDepartments(pageable);
     }
 
     public Mono<DepartmentEntity> updateDepartment(BigInteger id, DepartmentEntity department) {
         // Add business logic here if needed before updating
-        return departmentApplicationService.updateDepartment(id, department);
+        return this.departmentApplicationService.updateDepartment(id, department);
     }
 
     public Mono<Void> deleteDepartment(BigInteger id) {
-        return departmentApplicationService.deleteDepartment(id);
+        return this.departmentApplicationService.deleteDepartment(id);
     }
 }
