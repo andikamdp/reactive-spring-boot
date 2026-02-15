@@ -1,0 +1,31 @@
+### Create Department
+POST http://localhost:8080/api/departments
+Content-Type: application/json
+Authorization: Basic user password
+
+{
+  "name": "IT",
+  "status": true
+}
+
+### Get Department by ID (Replace with actual ID)
+GET http://localhost:8080/api/departments/{id}
+Authorization: Basic user password
+
+### Get All Departments
+GET http://localhost:8080/api/departments?page=0&size=10
+Authorization: Basic user password
+
+### Update Department (Replace with actual ID)
+PUT http://localhost:8080/api/departments/{id}
+Content-Type: application/json
+Authorization: Basic user password
+
+{
+  "name": "IT Updated",
+  "status": false
+}
+
+### Delete Department (Replace with actual ID)
+DELETE http://localhost:8080/api/departments/{id}
+Authorization: Basic user password

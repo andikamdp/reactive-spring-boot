@@ -1,0 +1,37 @@
+### Create User
+POST http://localhost:8080/api/users
+Content-Type: application/json
+Authorization: Basic user password
+
+{
+  "username": "johndoe",
+  "password": "password123",
+  "departmentId": 1,
+  "birthdate": "1990-01-01",
+  "status": true
+}
+
+### Get User by ID (Replace with actual UUID)
+GET http://localhost:8080/api/users/8384fe6c-e1a4-4bd1-9e9c-d42eadf30312
+Authorization: Basic user password
+
+### Get All Users
+GET http://localhost:8080/api/users?page=0&size=10
+Authorization: Basic user password
+
+### Update User (Replace with actual UUID)
+PUT http://localhost:8080/api/users/{uuid}
+Content-Type: application/json
+Authorization: Basic user password
+
+{
+  "username": "johndoe_updated",
+  "password": "newpassword123",
+  "departmentId": 2,
+  "birthdate": "1990-01-01",
+  "status": true
+}
+
+### Delete User (Replace with actual UUID)
+DELETE http://localhost:8080/api/users/{uuid}
+Authorization: Basic user password
